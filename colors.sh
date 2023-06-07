@@ -49,12 +49,15 @@ fHide="\e[8m"
 fCross="\e[9m"
 
 # Example
-echo -e "Foreground basic color set: ${cBlackFg}cBlackFg ${cRedFg}cRedFg ${cGreenFg}cGreenFg ${cYellowFg}cYellowFg ${cBlueFg}cBlueFg ${cMagentaFg}cMagentaFg ${cCyanFg}cCyanFg ${cGrayFg}cGrayFg ${fNormal}fNormal"
+if [[ $1 == "ex" ]]; then
 
-echo -e "Foreground light color set: ${cLBlackFg}cLBlackFg ${cLRedFg}cLRedFg ${cLGreenFg}cLGreenFg ${cLYellowFg}cLYellowFg ${cLBlueFg}cLBlueFg ${cLMagentaFg}cLMagentaFg ${cLCyanFg}cLCyanFg ${cLGrayFg}cLGrayFg ${fNormal}fNormal"
+	echo -e "Foreground basic color set: ${cBlackFg}cBlackFg ${cRedFg}cRedFg ${cGreenFg}cGreenFg ${cYellowFg}cYellowFg ${cBlueFg}cBlueFg ${cMagentaFg}cMagentaFg ${cCyanFg}cCyanFg ${cGrayFg}cGrayFg ${fNormal}fNormal"
 
-echo -e "Background basic color set: ${cBlackBg}cBlackBg ${cRedBg}cRedBg ${cGreenBg}cGreenBg ${cYellowBg}cYellowBg ${cBlueBg}cBlueBg ${cMagentaBg}cMagentaBg ${cCyanBg}cCyanBg ${cGrayBg}cGrayBg ${fNormal}fNormal"
+	echo -e "Foreground light color set: ${cLBlackFg}cLBlackFg ${cLRedFg}cLRedFg ${cLGreenFg}cLGreenFg ${cLYellowFg}cLYellowFg ${cLBlueFg}cLBlueFg ${cLMagentaFg}cLMagentaFg ${cLCyanFg}cLCyanFg ${cLGrayFg}cLGrayFg ${fNormal}fNormal"
 
-echo -e "Background light color set: ${cLBlackBg}cLBlackBg ${cLRedBg}cLRedBg ${cLGreenBg}cLGreenBg ${cLYellowBg}cLYellowBg ${cLBlueBg}cLBlueBg ${cLMagentaBg}cLMagentaBg ${cLCyanBg}cLCyanBg ${cLGrayBg}cLGrayBg ${fNormal}fNormal"
+	echo -e "Background basic color set: ${cBlackBg}cBlackBg ${cRedBg}cRedBg ${cGreenBg}cGreenBg ${cYellowBg}cYellowBg ${cBlueBg}cBlueBg ${cMagentaBg}cMagentaBg ${cCyanBg}cCyanBg ${cGrayBg}cGrayBg ${fNormal}fNormal"
 
-echo -e "Special Format set: ${fBold}fBold${fNormal} ${fFaint}fFaint${fNormal} ${fItalic}fItalic${fNormal} ${fUnder}fUnder${fNormal} ${fBlinkS}fBlinkS${fNormal} ${fBlinkF}fBlinkF${fNormal} ${fReverse}fReverse${fNormal} ${fHide}fHide${fNormal} ${fCross}fCross${fNormal} ${fNormal}fNormal"
+	echo -e "Background light color set: ${cLBlackBg}cLBlackBg ${cLRedBg}cLRedBg ${cLGreenBg}cLGreenBg ${cLYellowBg}cLYellowBg ${cLBlueBg}cLBlueBg ${cLMagentaBg}cLMagentaBg ${cLCyanBg}cLCyanBg ${cLGrayBg}cLGrayBg ${fNormal}fNormal"
+
+	echo -e "Special Format set: ${fBold}fBold${fNormal} ${fFaint}fFaint${fNormal} ${fItalic}fItalic${fNormal} ${fUnder}fUnder${fNormal} ${fBlinkS}fBlinkS${fNormal} ${fBlinkF}fBlinkF${fNormal} ${fReverse}fReverse${fNormal} ${fHide}fHide${fNormal} ${fCross}fCross${fNormal} ${fNormal}fNormal"
+fi
